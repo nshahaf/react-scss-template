@@ -1,0 +1,8 @@
+@use '../utils' as *;
+
+footer {
+    height: 100px;
+    @include flex-center-center;
+    background-color: rgba(0, 128, 0, 0.658);
+    color: white;
+}

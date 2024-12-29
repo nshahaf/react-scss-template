@@ -1,0 +1,8 @@
+@use '../utils' as *;
+
+aside {
+    @include flex-center-center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 166, 0, 0.712);
+    color: white;
+}

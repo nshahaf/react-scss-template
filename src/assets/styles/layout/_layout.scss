@@ -1,0 +1,56 @@
+@use '../utils' as *;
+
+@media (min-width: 768px) {
+    .app-layout {
+        $padding: 20px;
+        width: 100%;
+        min-height: 100vh;
+
+        display: grid;
+        // grid-template-columns: [full-width-start] $padding [aside] auto [main-start] auto [main-end] $padding [full-width-end];
+        grid-template-columns: [full-width-start] $padding [aside-start] 1fr [main-start] 4fr [main-end] $padding [full-width-end];
+        grid-template-rows: auto 1fr auto;
+
+    }
+
+    header {
+        grid-column: full-width;
+        grid-row: 1;
+    }
+
+    .pages-layout {
+        // grid-column: main;
+        grid-column: main / full-width-end;
+        grid-row: 2;
+    }
+
+    aside {
+        // grid-column: aside-start / main-start;
+        grid-column: full-width-start / main-start;
+        grid-row: 2;
+    }
+
+    footer {
+        grid-column: full-width;
+        grid-row: 3;
+    }
+
+    .container {
+        width: 100%;
+        min-height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-layout {
+        display: grid;
+        grid-template-rows: auto 4fr 1fr auto;
+        min-height: 100vh;
+
+        .pages-layout {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

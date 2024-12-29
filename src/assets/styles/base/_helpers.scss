@@ -1,0 +1,79 @@
+@use '../utils' as *;
+
+//list helpers
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+// Cursor helpers
+.pointer {
+    cursor: pointer;
+}
+
+// Visibility helpers
+.hidden {
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+// Flexbox helpers
+.flex {
+    display: flex;
+}
+
+// Text transform helpers
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+// Text alignment helpers
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// Font weight helpers
+.text-bold {
+    font-weight: 700;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}

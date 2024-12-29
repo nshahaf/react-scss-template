@@ -1,0 +1,9 @@
+@use '../utils' as *;
+
+.home-container {
+    width: 100%;
+    height: 100%;
+    @include flex-center-center;
+    background-color: rgba(255, 0, 0, 0.486);
+    color: white;
+}

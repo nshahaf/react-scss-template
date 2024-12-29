@@ -1,0 +1,8 @@
+@use '../utils' as *;
+
+header {
+    background-color: rgba(0, 0, 255, 0.705);
+    color: white;
+    @include flex-center-center;
+    height: 100px;
+}
