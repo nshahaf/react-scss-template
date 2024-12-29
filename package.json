@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint .",
     "sass": "sass --watch src/assets/styles/main.scss:css/main.css"
   },
   "dependencies": {
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0"

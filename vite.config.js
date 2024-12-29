@@ -4,6 +4,7 @@ import svgr from "vite-plugin-svgr"
 
 export default defineConfig(({ mode }) => {
   return {
+    base: mode === 'production' ? '/react-scss-template/' : '',
     plugins: [react(), svgr()],
     css: {
       preprocessorOptions: {

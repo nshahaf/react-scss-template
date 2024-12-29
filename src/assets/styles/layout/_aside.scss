@@ -2,7 +2,7 @@
 
 aside {
     @include flex-center-center;
-    flex-wrap: wrap;
+    flex-direction: column;
     background-color: rgba(255, 166, 0, 0.712);
     color: white;
 }
